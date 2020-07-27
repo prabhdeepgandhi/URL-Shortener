@@ -10,6 +10,14 @@ app.secret_key='gdhasbvguvsduhuafhai'
 def home():
     return render_template('home.html')
 
+@app.route('/website_url')
+def website_url():
+    return render_template('website_url.html')
+
+@app.route('/file_url')
+def file_url():
+    return render_template('file_url.html')
+
 
 
 @app.route('/your-url',methods=['GET','POST'])
